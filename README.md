@@ -10,6 +10,6 @@ Este projeto é uma API para gerenciamento de usuários, construída com **Djang
 - **Excluir usuário** (`DELETE /api/data/`)  
 
 📌 Tecnologias
-Python
-Django
-Django REST Framework
+- Python
+- Django
+- Django REST Framework
