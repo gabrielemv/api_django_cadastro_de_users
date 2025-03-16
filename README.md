@@ -6,6 +6,7 @@ Esta API fornece funcionalidades para gerenciar usuários, permitindo operaçõe
 - Python
 - Django
 - Django REST Framework (DRF)
+- Poetry (Gerenciador de dependências)
 
 ## Instalação
 
@@ -19,23 +20,27 @@ Esta API fornece funcionalidades para gerenciar usuários, permitindo operaçõe
    cd nome_do_projeto
    ```
 
-3. Crie e ative um ambiente virtual:
+3. Instale o Poetry, se ainda não tiver:
    ```sh
-   python -m venv venv
-   source venv/bin/activate  # No Windows: venv\Scripts\activate
+   pip install poetry
    ```
 
-4. Instale as dependências:
+4. Instale as dependências do projeto:
    ```sh
-   pip install -r requirements.txt
+   poetry install
    ```
 
-5. Execute as migrações do banco de dados:
+5. Ative o ambiente virtual do Poetry:
+   ```sh
+   poetry shell
+   ```
+
+6. Execute as migrações do banco de dados:
    ```sh
    python manage.py migrate
    ```
 
-6. Inicie o servidor:
+7. Inicie o servidor:
    ```sh
    python manage.py runserver
    ```
@@ -98,4 +103,3 @@ POST /api/user_manager/
 
 ## Contribuição
 Se quiser contribuir para este projeto, sinta-se à vontade para abrir um Pull Request.
-
